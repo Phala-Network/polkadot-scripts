@@ -7,7 +7,7 @@ Before starting:
 
 ```bash
 https://github.com/Phala-Network/polkadot-scripts
-cd polkadot-
+cd polkadot-scipts
 npm i -g pnpm bunyan
 pnpm install
 ```
@@ -15,6 +15,8 @@ pnpm install
 ## `watch_and_topup`
 
 Watch the balances of given list of accounts and topup them if they are below the threshold.
+
+Add a comma between accounts in the watch list.
 
 ```bash
 SCRIPT_NAME=watch_and_topup \
