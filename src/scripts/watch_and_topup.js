@@ -25,7 +25,7 @@ watchList.forEach((address) => {
     }
     lastFree = currentFree
     if (currentFree.lt(THRESHOLD)) {
-      const transfer = api.tx.balance.transfer(address, TOPUP_VALUE)
+      const transfer = api.tx.balances.transfer(address, TOPUP_VALUE)
       const thisNonce = nonce
       nonce++
       logger.info({
