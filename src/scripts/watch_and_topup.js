@@ -9,7 +9,7 @@ await setupPhalaApi(process.env.PHALA_API_URL)
 const THRESHOLD = api.createType('BalanceOf', process.env.THRESHOLD ?? '10000000000000')
 const TOPUP_VALUE = api.createType('BalanceOf', process.env.TOPUP_VALUE ?? '10000000000000')
 
-const { nonce } = await api.query.system.account(fromAccount.address)
+let { nonce } = await api.query.system.account(fromAccount.address)
 
 logger.info(`Started with account ${fromAccount.address} and nonce ${nonce}`)
 logger.info(`Watching ${watchList.length} addresses`, watchList)
