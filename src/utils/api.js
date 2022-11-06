@@ -1,8 +1,7 @@
 
 import { ApiPromise, HttpProvider, WsProvider } from '@polkadot/api'
 import { Keyring } from '@polkadot/keyring'
-import { khala } from '@phala/typedefs'
-import { typesChain as phalaTypesChain } from '@phala/typedefs'
+import { typesBundle } from '@phala/typedefs'
 import logger from './logger'
 import { cryptoWaitReady } from '@polkadot/util-crypto'
 
@@ -13,12 +12,6 @@ export const keyring = new Keyring({
   type: 'sr25519',
   ss58Format: PHALA_SS58_FORMAT,
 })
-
-const typesBundle = {
-  spec: {
-    khala,
-  },
-}
 
 const rpc = {
   pha: {
@@ -64,9 +57,6 @@ const setupPhalaApi = async (
   const phalaProvider = new (useHttp ? HttpProvider : WsProvider)(endpoint)
   const phalaApi = await ApiPromise.create({
     provider: phalaProvider,
-    typesChain: {
-      ...phalaTypesChain,
-    },
     typesBundle,
     rpc,
     typesAlias: {

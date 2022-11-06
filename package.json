@@ -2,13 +2,13 @@
   "name": "@phala/polkadot-scripts",
   "type": "module",
   "dependencies": {
-    "@phala/typedefs": "^0.2.29",
-    "@polkadot/api": "^6.8.1",
-    "@polkadot/keyring": "^7.8.2",
-    "@polkadot/util-crypto": "^7.8.2",
+    "@phala/typedefs": "^0.2.32",
+    "@polkadot/api": "^9.7.1",
+    "@polkadot/keyring": "^10.1.11",
+    "@polkadot/util-crypto": "^10.1.11",
     "bunyan": "^1.8.15"
   },
   "scripts": {
-    "start": "node --trace-warnings --experimental-json-modules --es-module-specifier-resolution=node --harmony-top-level-await src/index.js"
+    "start": "node --trace-warnings --experimental-json-modules --es-module-specifier-resolution=node src/index.js"
   }
 }
