@@ -1,5 +1,5 @@
-import { phalaApi as api, setupPhalaApi } from "../utils/api";
-import logger from "../utils/logger";
+import { phalaApi as api, setupPhalaApi } from "../utils/api.js";
+import logger from "../utils/logger.js";
 
 const watchList = process.env.WATCH_LIST.split(",").map((i) => i.trim());
 

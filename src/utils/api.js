@@ -2,8 +2,8 @@
 import { ApiPromise, HttpProvider, WsProvider } from '@polkadot/api'
 import { Keyring } from '@polkadot/keyring'
 import { typesBundle } from '@phala/typedefs'
-import logger from './logger'
 import { cryptoWaitReady } from '@polkadot/util-crypto'
+import logger from './logger.js'
 
 const PHALA_SS58_FORMAT = 30
 

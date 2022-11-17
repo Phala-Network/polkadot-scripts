@@ -3,9 +3,9 @@
   "type": "module",
   "dependencies": {
     "@phala/typedefs": "^0.2.32",
-    "@polkadot/api": "^9.7.1",
-    "@polkadot/keyring": "^10.1.11",
-    "@polkadot/util-crypto": "^10.1.11",
+    "@polkadot/api": "^9.8.2",
+    "@polkadot/keyring": "^10.1.12",
+    "@polkadot/util-crypto": "^10.1.12",
     "bunyan": "^1.8.15"
   },
   "scripts": {
